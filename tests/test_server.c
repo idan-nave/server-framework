@@ -3,7 +3,7 @@
 #include <string.h>
 #include <setjmp.h>
 #include <cmocka.h>
-#include "../src/router.h"
+#include "../include/router.h"
 
 #define VALID_REQUEST "GET /health HTTP/1.1\r\nHost: localhost\r\nAuthorization: Bearer supersecretkey123\r\n\r\n"
 #define INVALID_REQUEST "GET /invalid HTTP/1.1\r\nHost: localhost\r\nAuthorization: Bearer supersecretkey123\r\n\r\n"

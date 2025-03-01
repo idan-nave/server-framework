@@ -4,7 +4,7 @@
 #include <time.h>
 #include <setjmp.h>
 #include <cmocka.h>
-#include "../src/rate_limit.h"
+#include "../include/rate_limit.h"
 
 // Mock request for rate limiting
 static void test_rate_limiting(void **state)

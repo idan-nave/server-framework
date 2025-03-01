@@ -3,7 +3,7 @@
 #include <string.h>
 #include <setjmp.h>
 #include <cmocka.h>
-#include "../src/auth.h"
+#include "../include/auth.h"
 
 // Mock request with correct API key
 static void test_valid_api_key(void **state)
