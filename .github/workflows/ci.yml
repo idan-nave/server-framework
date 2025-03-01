@@ -1,0 +1,17 @@
+name: CI Pipeline
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: make
+      - name: Run Tests
+        run: make test
